@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen - Demo Flexbox</title>
+        <style>
+            body{ padding: 2em; }
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            .mainContentItem{
+                text-align: left;
+                background: deepskyblue;
+            }
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+
+            .sideBarLeftItem { background: gold; }
+            .sideBarRightItem{ background: hotpink; }
+
+            .sideBarItem{ flex: 1 0 0; border: 0px solid green; }
+            .mainContentItem{ flex: 3 0px;}
+            .sideBarLeftItem{ order: 1; }
+            .mainContentItem{ order: 2; }
+            .sideBarRightItem{ order: 3; } 
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>HEADER - Sample Flexbox Example</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First Article</h2>
+                    <p>Jim hastened his lagging steps at this assurance of a quick relief from the dark passage. Sonya went out into the passage to go to the barn. He had died by the time I read that passage in one of his books, so I couldn't write him, as is my normal practice when an author's words puzzle me.</p>
+                </article>
+                <article>
+                    <h3>Second Article</h3>
+                    <p>Jim hastened his lagging steps at this assurance of a quick relief from the dark passage. Sonya went out into the passage to go to the barn. He had died by the time I read that passage in one of his books, so I couldn't write him, as is my normal practice when an author's words puzzle me.</p>
+                </article>
+                <article>
+                    <h4>Third Article</h4>
+                    <p>Jim hastened his lagging steps at this assurance of a quick relief from the dark passage. Sonya went out into the passage to go to the barn. He had died by the time I read that passage in one of his books, so I couldn't write him, as is my normal practice when an author's words puzzle me.</p>
+                </article>
+            </section>
+            <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+            <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+</html>
